@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+	implementation group: 'org.json', name:'json', version:'20201115'
+   
+}
+
+task(run, dependsOn: 'classes', type: JavaExec) {
+   //main = 'BikeShare'   
+   main = 'YouTube'   
+   classpath = sourceSets.main.runtimeClasspath
+}
