@@ -20,7 +20,8 @@ public class FileLoader {
             BufferedReader br = new BufferedReader(new FileReader(this.filename));
             while ((line = br.readLine())!=null){
                 String[] columns = line.split(",");
-                StudentRecord tempStudent = new StudentRecord(columns[0], Float.parseFloat(columns[1]), Float.parseFloat(columns[2]), Float.parseFloat(columns[3]));
+                StudentRecord tempStudent = new StudentRecord(columns[0],
+                        Float.parseFloat(columns[1]), Float.parseFloat(columns[2]), Float.parseFloat(columns[3]));
                 data.add(tempStudent);
             }
         } catch (FileNotFoundException e){

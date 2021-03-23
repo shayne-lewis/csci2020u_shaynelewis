@@ -1,0 +1,15 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<?import javafx.scene.canvas.Canvas?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller">
+
+    <Canvas fx:id="mainCanvas" GridPane.columnIndex="0" GridPane.rowIndex="0" height="1200" width="750"></Canvas>
+
+</GridPane>
